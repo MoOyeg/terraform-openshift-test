@@ -1,0 +1,10 @@
+apiVersion: project.openshift.io/v1
+kind: Project
+metadata:
+  annotations:
+    openshift.io/description: "Project to Test Terraform Installation on Openshift"
+    openshift.io/display-name: terraform-test
+  name: terraform
+spec:
+  finalizers:
+  - kubernetes
